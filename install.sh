@@ -1,9 +1,9 @@
 #!/bin/bash -e
 
 show_help() {
-cat << EOF
-Usage: ${0##*/} [-hv] [-a ARN] [-i GROUP,GROUP,...] [-l GROUP,GROUP,...] [-s GROUP] [-p PROGRAM] [-u "ARGUMENTS"]
-Install import_users.sh and authorized_key_commands.
+cat << eof
+usage: ${0##*/} [-hv] [-a arn] [-i group,group,...] [-l group,group,...] [-s group] [-p program] [-u "arguments"]
+install import_users.sh and authorized_key_commands.
 
     -h                 display this help and exit
     -v                 verbose mode.
@@ -125,3 +125,4 @@ chmod 0644 /etc/cron.d/import_users
 /opt/import_users.sh
 
 service sshd restart
+service cron restart
