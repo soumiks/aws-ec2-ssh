@@ -83,6 +83,8 @@ git clone https://github.com/soumiks/aws-ec2-ssh.git
 
 cd "$tmpdir/aws-ec2-ssh"
 
+mkdir -p /opt
+
 cp authorized_keys_command.sh /opt/authorized_keys_command.sh
 cp import_users.sh /opt/import_users.sh
 
